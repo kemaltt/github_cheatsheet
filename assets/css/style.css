@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Tangerine&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display:ital@1&family=Roboto+Mono&family=Rubik+Microbe&family=Titillium+Web&display=swap');
 
 /* 
-font-family: 'Roboto', sans-serif;
-
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Rubik Microbe', cursive;
 font-family: 'Titillium Web', sans-serif;
 
 farbe #AAB8C3,#D8C164, #4A9EBE,#C198FB
@@ -19,8 +21,12 @@ General Styles
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=888&q=80");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=888&q=80");
     /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../img/Bildschirmfoto\ 2022-04-11\ um\ 14.11.51.png"); */
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -35,17 +41,29 @@ body {
            Header
 =========================*/
 
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 nav i {
+    position: relative;
+    top: 20px;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 4rem;
     width: 20%;
+}
+
+nav i:hover {
+    color: #C198FB;
 }
 
 .nav-list {
     display: inline-block;
     width: 79%;
     text-align: right;
-    padding-right: 1%;
+    padding-right: 2%;
 }
 
 nav ul li {
@@ -57,11 +75,10 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
     color: #D8C164;
     padding: 0 0.6rem 0.3rem 0;
-    font-size: 1.2rem;
-    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-family: 'Fjalla One', sans-serif;
     border-bottom: 1px solid #fff;
 }
 
@@ -77,15 +94,17 @@ nav a:hover {
 .header-title h2 {
     text-align: center;
     color: #fff;
-    font-size: 7rem;
-    font-family: 'Titillium Web', sans-serif;
-    font-style: italic;
+    font-size: 5rem;
+    font-family: 'Rubik Microbe', cursive;
 }
 
 
 /*============================
           Main
 =========================*/
+
+
+/* Section-Git=========== */
 
 .section-git {
     padding: 1vh 5% 1vh 5%;
@@ -94,22 +113,25 @@ nav a:hover {
 
 .section-git h2 {
     color: #4A9EBE;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     font-size: 5rem;
     border-bottom: 2px solid #D8C164;
     margin-bottom: 4vh;
 }
 
 .section-git p {
-    color: #fff;
+    color: #AAB8C3;
     font-family: 'Titillium Web', sans-serif;
     font-size: 2rem;
     margin-right: 10%;
 }
 
+
+/* Section-Befehle=========== */
+
 .section-befehle h2 {
     color: #4A9EBE;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     font-size: 5rem;
     text-align: center;
 }
@@ -120,7 +142,7 @@ nav a:hover {
     width: 30%;
     color: #D8C164;
     padding: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     font-size: 18px;
 }
 
@@ -141,6 +163,9 @@ nav a:hover {
     border-radius: 1rem;
 }
 
+
+/* Section-Abkürzung=========== */
+
 .section-abkürzung {
     padding: 20vh 5% 1vh 5%;
     margin-bottom: 5vh;
@@ -148,7 +173,7 @@ nav a:hover {
 
 .section-abkürzung h2 {
     color: #4A9EBE;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     font-size: 5rem;
     border-bottom: 2px solid #D8C164;
     margin-bottom: 4vh;
@@ -165,9 +190,14 @@ nav a:hover {
     color: #D8C164;
 }
 
+
+/*============================
+         Footer
+=========================*/
+
 footer {
     text-align: center;
     color: #4A9EBE;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', serif;
     padding: 2rem;
 }
