@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Tangerine&family=Titillium+Web&display=swap');
+
+/* 
+font-family: 'Roboto', sans-serif;
+
+font-family: 'Titillium Web', sans-serif;
+
+farbe #AAB8C3,#D8C164, #4A9EBE,#C198FB
+*/
+
+
+/*============================
+General Styles
+=========================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=888&q=80");
+    /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../img/Bildschirmfoto\ 2022-04-11\ um\ 14.11.51.png"); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 3vh 2% 0 2%;
+    height: 100vh;
+}
+
+
+/*============================
+           Header
+=========================*/
+
+nav i {
+    color: #fff;
+    font-size: 2.5rem;
+    width: 20%;
+}
+
+.nav-list {
+    display: inline-block;
+    width: 79%;
+    text-align: right;
+    padding-right: 1%;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 1%;
+    ;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    color: #D8C164;
+    padding: 0 0.6rem 0.3rem 0;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #fff;
+}
+
+nav a:hover {
+    color: #fff;
+    border-bottom: 1px solid #D8C164;
+}
+
+.header-title {
+    margin: 30vh 0 20vh 0;
+}
+
+.header-title h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 7rem;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: italic;
+}
+
+
+/*============================
+          Main
+=========================*/
+
+.section-git {
+    padding: 1vh 5% 1vh 5%;
+    margin-bottom: 20vh;
+}
+
+.section-git h2 {
+    color: #4A9EBE;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    border-bottom: 2px solid #D8C164;
+    margin-bottom: 4vh;
+}
+
+.section-git p {
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2rem;
+    margin-right: 10%;
+}
+
+.section-befehle h2 {
+    color: #4A9EBE;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.section-befehle h3 {
+    display: inline-block;
+    border: 1.8px solid #4A9EBE;
+    width: 30%;
+    color: #D8C164;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.section-befehle p {
+    display: inline-block;
+    border-bottom: 2px solid #4A9EBE;
+    width: 69%;
+    color: #C198FB;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.befehle-list {
+    text-align: left;
+    margin: 2vh 20% 2vh 20%;
+    border: 4px solid #AAB8C3;
+    border-radius: 1rem;
+}
+
+.section-abkürzung {
+    padding: 20vh 5% 1vh 5%;
+    margin-bottom: 5vh;
+}
+
+.section-abkürzung h2 {
+    color: #4A9EBE;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    border-bottom: 2px solid #D8C164;
+    margin-bottom: 4vh;
+}
+
+.section-abkürzung p {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2rem;
+    margin-right: 10%;
+    color: #C198FB;
+}
+
+.section-abkürzung span {
+    color: #D8C164;
+}
+
+footer {
+    text-align: center;
+    color: #4A9EBE;
+    font-family: 'Roboto', sans-serif;
+    padding: 2rem;
+}
